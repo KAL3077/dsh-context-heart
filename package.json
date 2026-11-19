@@ -1,0 +1,23 @@
+{
+  "name": "dsh-context-heart",
+  "version": "0.3.1",
+  "private": true,
+  "type": "module",
+  "description": "上下文爱心桌宠：屏幕角落一颗红心，上下文越用越碎；左键看血条与分段占用，右键出菜单。",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "license": "MIT"
+}
